@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Survey Form</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1> Tour Survey </h1>
+  <p id="intro"> Thank you for going on our tour of Seattle with us! Please complete this survey to help us ensure quality tours for you in the future!</p>
+
+<form id="surveyForm">
+    <div class="form-group">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required>
+    </div>
+    <div class="form-group">
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required>
+    </div>
+    <div class="form-group">
+        <label for="age">Your Age:</label>
+        <input type="number" id="age" name="age" required>
+    </div>
+    <div class="form-group">
+        <label for="feedback">Feedback:</label>
+        <textarea id="feedback" name="feedback" rows="4" required></textarea>
+    </div>
+    <div class="form-group">
+        <label for="rating">Overall Rating:</label>
+        <select id="rating" name="rating" required>
+            <option value="">-- Select One --</option>
+            <option value="1">1 - Poor</option>
+            <option value="2">2 - Fair</option>
+            <option value="3">3 - Good</option>
+            <option value="4">4 - Very Good</option>
+            <option value="5">5 - Excellent</option>
+        </select>
+    </div>
+    <input type="submit" value="Submit">
+</form>
+  <script src="script.js"></script>
+</body>
+</html>
